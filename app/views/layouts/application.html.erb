@@ -7,7 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+	<div class="my_headline_font_size col-xs-3">
+		LOGO
+	</div>
+	<div class="col-xs-4">
+	Facts about Extinction - a great way to motivate you to do what matters, cause you might not have time.
+	</div>
+	 <div class="col-xs-5">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+</header>
 
+ <br class="clear" />
 <%= yield %>
 
 </body>
