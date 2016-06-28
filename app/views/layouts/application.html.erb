@@ -8,20 +8,40 @@
 </head>
 <body>
 <header>
-	<div class="my_headline_font_size col-xs-3">
-		LOGO
-	</div>
 	<div class="col-xs-4">
+	<div id="logoheader">
+	<div id="parrot">
+		<div id="header">
+			<div id="peakt"></div>
+			<div id="face"></div>
+			<div id="eye"></div>
+			<div id="peakf"></div>
+		</div>
+		<div id="body">
+			<div id="wing1"></div>
+			<div id="wing2"></div>
+			<div id="wing3"></div>
+			<div id="shadowing"></div>
+		</div>
+		<div id="foot"></div>
+		<div id="tail"></div>
+	</div>
+	</div>
+	</div>
+	<div class="col-xs-8">
 	Facts about Extinction - a great way to motivate you to do what matters, cause you might not have time.
 	</div>
-	 <div class="col-xs-5">
-      <%= link_to 'Contribute', '#' %>
-      <%= link_to 'About', '#' %>
-    </div>
 </header>
 
  <br class="clear" />
 <%= yield %>
 
+
+<footer>
+	<div class="col-xs-7"></div>
+	<div class="col-xs-5">
+	      <%= link_to 'Contribute', '#' %>    <%= link_to 'About', '#' %>
+	</div>
+</footer>
 </body>
 </html>
