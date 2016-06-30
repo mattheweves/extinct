@@ -31,7 +31,20 @@
 
   <br class="clear" />
 
+<div class="container">
 <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+     <div class="col-xs-6">
+        <%= link_to "This is too much, why did you have to talk about Extinction?", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-xs-6 footer-blurb">
+        Proudly hacked in Boulder, CO by <a href="http://github.com/mattheweves/extinct">Matt Eves</a><br />
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
