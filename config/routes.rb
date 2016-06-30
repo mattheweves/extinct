@@ -1,9 +1,9 @@
-Rails.application.routes.draw do
+Splurty::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'quotes#index'
+  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
+  #   resources :products 
   #     member do
   #       get 'short'
   #       post 'toggle'
@@ -25,12 +25,16 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+root 'quotes#index'
+
 
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
   #     resource :seller
   #   end
+  resources :quotes
+  get 'about', :to => 'quotes#about'
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
