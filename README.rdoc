@@ -1,6 +1,6 @@
 == EXTINCTION FACTS SAMPLE APP
 
-This is a sample Rails App with a simple database structure, holding quotes about Extinction and randomly displaying them on the home page. 
+This is a sample Rails App with a simple database structure, holding quotes about Extinction and randomly displaying them on the home page.
 
 Purpose is to test/learn:
 
@@ -17,7 +17,5 @@ Purpose is to test/learn:
 * Accessing Data using Ruby and randomly selecting items in the db
 
 * CSS/Web Page Layout
-
-* Deployment instructions
 
 * Deployment to Heroku

@@ -1,9 +1,10 @@
-<h2> 
-	<span>SPLURTY / No. <%= @quote.id %></span>
-	Food for action about the earth, animal and land species, and their danger of extinction.
+<h2>
+	<span>SPLURTY / No. <% if @quote %><%= @quote.id %><% else %>No Quotes Yet!<% end %><br /><br /></span>
+	Here you can submit your "food for action" about the earth, animal and land species, and their danger of extinction.
+<% if @quote %>
 <h1><%= @quote.saying %></h1>
 <h2 class="pull-right">- <%= @quote.author %></h2>
-
+<% end %>
 
 <br class="clear">
 <br />

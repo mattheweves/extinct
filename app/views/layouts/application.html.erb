@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>EXTINCT</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,15 +10,9 @@
 	<header>
 		<div class="col-xs-3">
 		 <%= link_to root_path, :class => 'logo' do %>
-		 	<div class="circle">
- 			 <br />
-  				What?
-			 <br />
-				Extinct
-			 <br />
-				When?!
-			</div>
+		 	<%= image_tag 'trees.png', :class => 'logo img-responsive' %>
 		  <% end %>
+      EXTINCT
 		</div>
 		<div class="col-xs-4 hidden-xs slogan">
 			Splurting out crazy facts about extinction as of the year 2015
@@ -32,7 +26,7 @@
 	</header>
 
 		<!-- Button trigger modal -->
-	
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -48,7 +42,7 @@
 				<br />
 				<%= f.input :author, :label => "Who is the author of the quote?", :placeholder =>"Sylvia Earle" %>
 				<br />
-				
+
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
