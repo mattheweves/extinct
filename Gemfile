@@ -32,6 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# For Heroku
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -48,5 +51,3 @@ end
 gem 'bootstrap-sass', '~> 3.3.4'
 # Forms
 gem 'simple_form'
-
-
