@@ -12,7 +12,7 @@
 		 <%= link_to root_path, :class => 'logo' do %>
 		 	<%= image_tag 'trees.png', :class => 'logo img-responsive' %>
 		  <% end %>
-      EXTINCT
+      EXTINCTION QUOTES
 		</div>
 		<div class="col-xs-4 hidden-xs slogan">
 			Splurting out crazy facts about extinction as of the year 2015
@@ -32,12 +32,12 @@
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
-	      <div class="modal-header">
+       <%=	simple_form_for Quote.new do |f| %>
+        <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
 	      </div>
 	      <div class="modal-body">
-	        <%=	simple_form_for Quote.new do |f| %>
 				<%=	f.input :saying, :label => "What is the saying you want to add?", :placeholder =>"Our past, our present, our future, absolutely depend on what we do now." %>
 				<br />
 				<%= f.input :author, :label => "Who is the author of the quote?", :placeholder =>"Sylvia Earle" %>
